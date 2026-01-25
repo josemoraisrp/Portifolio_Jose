@@ -1,208 +1,61 @@
-body {
-
-    background: #121212;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.card {
-    background: #1e1e1e;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    width: 300px;
-}
-
-.card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    border: 3px solid #00bfff;
-
-}
-
-.card p {
-    color: #ccc;
-    margin-bottom: 20px;
-    font-weight: bolder;
-}
-
-card h1 {
-    margin: 10px 0;
-    font-size: 1.5em;
-}
-
-.links a {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 15px;
-    background: #00bfff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
-    font-weight: bolder;
-    
-
-}
-.links a:hover {
-    background: #007acc;
-    
-}
-body {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.card {
-  background: rgba(30, 30, 30, 0.9);
-  padding: 30px;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  width: 300px;
-  animation: fadeInUp 1.2s ease;
-}
-
-/* Animação de entrada */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  border: 3px solid #00bfff;
-  box-shadow: 0 0 10px #00bfff;
-  transition: 0.4s;
-}
-
-.card img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px #00bfff;
-}
-
-.card h1 {
-  margin: 10px 0;
-  font-size: 1.5em;
-}
-
-.card p {
-  color: #ccc;
-  margin-bottom: 20px;
-}
-
-.links a {
-  display: inline-block;
-  margin: 5px;
-  padding: 10px 15px;
-  background: #00bfff;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
-  transition: all 0.3s ease;
-}
-
-.links a:hover {
-  background: #0099cc;
-  box-shadow: 0 0 15px #00bfff, 0 0 30px #00bfff;
-}
-
-/* Estilo base */
+/* ===============================
+   VARIÁVEIS DE TEMA
+================================ */
 :root {
   --bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   --card-bg: rgba(30, 30, 30, 0.9);
-  --text: #fff;
-  --subtext: #ccc;
+  --text: #ffffff;
+  --subtext: #cccccc;
   --accent: #00bfff;
 }
 
-/* Tema claro */
+/* Tema claro (futuro) */
 body.light {
   --bg: linear-gradient(135deg, #dfe9f3, #ffffff);
   --card-bg: rgba(255, 255, 255, 0.9);
-  --text: #222;
-  --subtext: #555;
+  --text: #222222;
+  --subtext: #555555;
   --accent: #007acc;
 }
 
-/* Corpo */
+/* ===============================
+   ESTILO BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  transition: 0.5s ease;
 }
 
-/* Botão de tema */
-#theme-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: var(--accent);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
+/* ===============================
+   LAYOUT
+================================ */
+main {
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
 }
 
-#theme-toggle:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px var(--accent);
-}
-
-/* Cartão */
+/* ===============================
+   CARTÃO PRINCIPAL
+================================ */
 .card {
   background: var(--card-bg);
   padding: 30px;
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  width: 300px;
   animation: fadeInUp 1s ease;
-  transition: 0.5s ease;
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .card img {
@@ -222,8 +75,7 @@ body {
 
 .card h1 {
   margin: 10px 0;
-  font-size: 1.5em;
-  color: var(--text);
+  font-size: 1.6rem;
 }
 
 .card p {
@@ -231,6 +83,9 @@ body {
   margin-bottom: 20px;
 }
 
+/* ===============================
+   LINKS
+================================ */
 .links a {
   display: inline-block;
   margin: 5px;
@@ -240,19 +95,80 @@ body {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
-  box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .links a:hover {
   background: #0099cc;
-  box-shadow: 0 0 15px var(--accent), 0 0 30px var(--accent);
+  box-shadow: 0 0 15px var(--accent);
 }
 
-/* 📱 Responsividade */
+/* ===============================
+   PROJETOS
+================================ */
+#projetos {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#projetos h2 {
+  margin-bottom: 20px;
+}
+
+.projeto-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.projeto-card h3,
+ {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.projeto-card p {
+  color: var(--subtext);
+  margin-bottom: 15px;
+}
+
+.projeto-links a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 14px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.projeto-links a:hover {
+  background: #02151b;
+}
+
+/* ===============================
+   ANIMAÇÃO
+================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   RESPONSIVO
+================================ */
 @media (max-width: 480px) {
   .card {
-    width: 90%;
     padding: 20px;
   }
 
@@ -260,11 +176,4 @@ body {
     width: 80px;
     height: 80px;
   }
-
-  #theme-toggle {
-    top: 10px;
-    right: 10px;
-    padding: 8px 12px;
-  }
 }
-
