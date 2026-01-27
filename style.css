@@ -215,6 +215,32 @@ main {
     border: 1px solid var (--accent);
     }
 
+    #theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--card-bg);
+  color: var(--text);
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--accent);
+}
+
+    
+
+
+
+
 
 
 
