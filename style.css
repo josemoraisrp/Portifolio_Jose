@@ -268,14 +268,11 @@ main {
 
 .projeto-links a:hover {
   background: #0099cc;
-  .projeto-links a:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 10px var(--accent);
 }
-}
-.projeto-destaque img {
-  max-width: 500px;
-}
+
+
 .projeto-destaque {
   margin-bottom: 20px;
 }
@@ -362,7 +359,7 @@ main {
 
 .skills span i {
   margin-right: 6px;
-  font-size: ;
+  font-size: 1rem;
 }
 
 .skills span:nth-child(1) { animation-delay: 0.1s; }
@@ -403,6 +400,28 @@ main {
 /* ===============================
    RESPONSIVO
 ================================ */
+@media (max-width: 768px) {
+  .projetos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projeto-links {
+    flex-direction: column;
+  }
+
+  .projeto-links a {
+    width: 100%;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  #destaque {
+    margin: 30px 0;
+  }
+}
+
 @media (max-width: 480px) {
   .card {
     padding: 20px;
@@ -413,10 +432,6 @@ main {
     height: 80px;
   }
 
-  .projeto-links {
-    flex-direction: column;
-  }
-
   #theme-toggle {
     top: 15px;
     right: 15px;
@@ -424,29 +439,6 @@ main {
     height: 40px;
     font-size: 1rem;
   }
-  @media (max-width: 768px) {
-  .projetos-grid {
-    grid-template-columns: 1fr;
-  }
-}@media (max-width: 768px) {
-  .projeto-links {
-    flex-direction: column;
-  }
-
-  .projeto-links a {
-    width: 100%;
-  }
-  @media (max-width: 768px) {
-  main {
-    padding: 15px;
-  }
-
-  #destaque {
-    margin: 30px 0;
-  }
-  
-}
-}
 }
 
 .fa-github { color: #fff; }
