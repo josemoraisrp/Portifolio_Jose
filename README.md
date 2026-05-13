@@ -42,7 +42,7 @@ Este portfólio foi criado com foco em:
 
 ## 📸 Preview do projeto
 
-<img width="100%" src="./img/preview.png">
+<img width="100%" src="preview.png">
 
 ---
 
