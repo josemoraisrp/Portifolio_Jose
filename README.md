@@ -66,7 +66,7 @@ José Morais
 https://github.com/josemoraisrp
 
 🔗 LinkedIn:
-(https://www.linkedin.com/in/jose-moraes-dev/)
+https://www.linkedin.com/in/jose-moraes-dev/
 
 ---
 
