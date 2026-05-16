@@ -1,291 +1,667 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <title>José Moraes | Desenvolvedor Front-End (HTML, CSS, JavaScript</title>
+  <meta charset="UTF-8" />
 
-  <meta name="description" content="Portfólio de José Moraes, desenvolvedor front-end especializado em HTML, CSS e JavaScript. Projetos reais e responsivos.">
-  <meta name="author" content="José Moraes">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.png">
+  <title>José Morais | Desenvolvedor Front-End</title>
+
+  <meta
+    name="description"
+    content="Portfólio profissional de José Morais, desenvolvedor front-end especializado em HTML, CSS e JavaScript."
+  />
+
+  <meta
+    name="author"
+    content="José Morais"
+  />
+
+  <meta
+    name="theme-color"
+    content="#00bfff"
+  />
+
+  <!-- SEO / OPEN GRAPH -->
+  <meta
+    property="og:title"
+    content="José Morais | Desenvolvedor Front-End"
+  />
+
+  <meta
+    property="og:description"
+    content="Portfólio profissional com projetos modernos em HTML, CSS e JavaScript."
+  />
+
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- CSS -->
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+  <!-- FAVICON -->
+  <link
+    rel="icon"
+    href="favicon.png"
+  />
+
 </head>
 
 <body>
-    <div class="video-container">
 
-    <video autoplay muted loop playsinline class="video-bg">
-        <source src="fundo.mp4" type="video/mp4">
+  <!-- =================================
+       VÍDEO FUNDO
+  ================================== -->
+
+  <div class="video-container">
+
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="video-bg"
+    >
+      <source
+        src="fundo.mp4"
+        type="video/mp4"
+      />
     </video>
 
     <div class="overlay"></div>
 
-</div>  
-        <button id="theme-toggle" aria-label="Alternar tema">
-  🌙
-       </button>
+  </div>
 
-<main>
 
-  <!-- ===============================
-       APRESENTAÇÃO
-  =============================== -->
-  <section class="card" aria-label="Apresentação pessoal">
-    <img src="foto.jpeg" loading="lazy" alt=""Aplicação de conversão de moedas em JavaScript".">
+  <!-- =================================
+       BOTÃO TEMA
+  ================================== -->
 
-    <h1>👋 Olá! Eu sou o José</h1>
+  <button
+    id="theme-toggle"
+    aria-label="Alternar tema"
+  >
+    🌙
+  </button>
 
-    <p class="descricao">
-  Sou desenvolvedor front-end em transição de carreira,
-focado em criar interfaces modernas, responsivas e funcionais.
+  <!-- =================================
+       MAIN
+  ================================== -->
+
+  <main>
+
+    <!-- =================================
+         APRESENTAÇÃO
+    ================================== -->
+
+    <section
+      class="card"
+      aria-label="Apresentação pessoal"
+    >
+
+      <img
+        src="foto.jpeg"
+        loading="lazy"
+        alt="Foto de José Morais"
+      />
+
+      <h1><span>👋 Olá! Eu sou oJosé</span></h1>
+
+      <p class="descricao">
+        <p class="descricao">
+          Desenvolvedor front-end criando interfaces modernas,
+          responsivas e experiências digitais com foco em performance,
+          design e usabilidade.
 </p>
+      </p>
 
-<p class="destaque">
-  🚀 Em transição de carreira para desenvolvimento front-end
-</p>
+      <p class="destaque">
+        ✨ Criando experiências digitais modernas com HTML, CSS e JavaScript
+      </p>
 
-    <div class="links">
-      <a href="José_Ap_Moraes_Currículo.pdf" download><i class="fa-solid fa-file"></i> Currículo</a>
-      <a href="https://github.com/josemoraisrp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-      <a href="https://www.linkedin.com/in/jose-moraes-dev" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-      <a href="https://wa.me/5516993271845" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-    </div>
-  </section>
+      <!-- LINKS -->
 
-  <!-- ===============================
-       SKILLS
-  =============================== -->
-  <section id="skills">
-    <h2>Habilidades</h2>
+      <div class="links">
 
-    <div class="skills">
-      <span><i class="fa-brands fa-html5"></i> HTML</span>
-      <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
-      <span><i class="fa-brands fa-js"></i> JavaScript</span>
-      <span><i class="fa-brands fa-github"></i> Git & GitHub</span>
-      <span><i class="fa-solid fa-mobile-screen"></i> Responsivo</span>
-    </div>
-  </section>
+        <a
+          href="José_Ap_Moraes_Currículo.pdf"
+          download
+          aria-label="Baixar currículo"
+        >
+          <i class="fa-solid fa-file"></i>
+          Currículo
+        </a>
 
-  <!-- ===============================
-       PROJETOS
-  =============================== -->
-  
-  
-  <section id="projetos">
+        <a
+          href="https://github.com/josemoraisrp"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Abrir GitHub"
+        >
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
 
+        <a
+          href="https://www.linkedin.com/in/jose-moraes-dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Abrir LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          LinkedIn
+        </a>
 
-    <h2>Projetos</h2>
- <!-- 🔥 PROJETO DESTAQUE -->
-<section id="destaque">
+        <a
+          href="https://wa.me/5516993271845"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Abrir WhatsApp"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
 
-    <h2>🚀 Projeto em Destaque</h2>
+      </div>
 
-    <div class="projeto-destaque">
-        <img src="login.png" alt="Sistema de Login">
+    </section>
 
-        <h3>🔐 Sistema de Login</h3>
+    <!-- =================================
+         HABILIDADES
+    ================================== -->
 
-        <p>
-            Projeto com validação de acesso, interface moderna, responsiva e interação com JavaScript.
-        </p>
-        <div class="stack">
-               HTML • CSS • JavaScript
-         </div>
+    <section id="skills">
 
-        <div class="projeto-links">
-            <a href="https://josemoraisrp.github.io/Mini-Site-de-Login/" target="_blank">
+      <h2>💻 Habilidades</h2>
+
+      <div class="skills">
+
+        <span>
+          <i class="fa-brands fa-html5"></i>
+          HTML
+        </span>
+
+        <span>
+          <i class="fa-brands fa-css3-alt"></i>
+          CSS
+        </span>
+
+        <span>
+          <i class="fa-brands fa-js"></i>
+          JavaScript
+        </span>
+
+        <span>
+          <i class="fa-brands fa-github"></i>
+          Git & GitHub
+        </span>
+
+        <span>
+          <i class="fa-solid fa-mobile-screen"></i>
+          Responsivo
+        </span>
+
+      </div>
+
+    </section>
+
+    <!-- =================================
+         PORTFÓLIO
+    ================================== -->
+
+    <section id="projetos">
+
+      <h2>🚀 Meu Portfólio</h2>
+
+      <!-- =================================
+           PROJETOS EM DESTAQUE
+      ================================== -->
+
+      <section id="destaque">
+
+        <h2>🔥 Projetos em Destaque</h2>
+
+        <div class="projeto-destaque-grid">
+
+          <!-- MVS -->
+
+          <div class="projeto-destaque">
+
+            <img
+              src="mvs.png"
+              alt="Website profissional MVS Segurança"
+            />
+
+            <h3>🛡️ Projeto MVS</h3>
+
+            <p>
+              Website profissional desenvolvido para empresa
+              de segurança eletrônica com foco em design moderno,
+              responsividade e experiência do usuário.
+            </p>
+
+            <div class="stack">
+              HTML • CSS • JavaScript
+            </div>
+
+            <div class="projeto-links">
+
+              <a
+                href="https://josemoraisrp.github.io/mvs.seg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir projeto MVS"
+              >
                 Ver projeto
-            </a>
+              </a>
 
-            <a href="https://github.com/josemoraisrp/Mini-Site-de-Login" target="_blank">
+              <a
+                href="https://github.com/josemoraisrp/mvs.seg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir código do projeto MVS"
+              >
                 Código no GitHub
-            </a>
-        </div>
-    </div>
+              </a>
 
-</section>
-    <div class="projetos-grid">
-
-      <!-- Projeto 01 -->
-      <div class="projeto-card">
-        <img src="conversor.png" loading="lazy" alt=""Aplicação de conversão de moedas em JavaScript"">
-
-        <h3>Aplicação para conversão de moedas </h3>
-
-        <p>
-          Aplicação para conversão de moedas desenvolvida para praticar lógica,
-          manipulação do DOM e interatividade com JavaScript.
-        </p>
-            <div class="stack">
-               HTML • CSS • JavaScript
             </div>
 
-        
+          </div>
 
-        <div class="projeto-links">
-          <a href="https://josemoraisrp.github.io/Conversor-de-moedas/" target="_blank" rel="noopener noreferrer">
-            Ver projeto
-          </a>
-          <a href="https://github.com/josemoraisrp/Conversor-de-moedas" target="_blankrel="noopener noreferrer"">
-            Código no GitHub
-          </a>
-        </div>
-      </div>
+          <!-- WEATHER -->
 
-      <!-- Projeto 02 -->
-      <div class="projeto-card">
-        <img src="mario.png" loading="lazy" alt=""Aplicação de conversão de moedas em JavaScript"">
+          <div class="projeto-destaque">
 
-        <h3>Landing Page Mario</h3>
+            <img
+              src="tempo.png"
+              alt="Aplicação Weather Glass App"
+            />
 
-        <p>
-          Projeto desenvolvido durante o curso DevClub para aplicar fundamentos
-          de HTML, CSS e JavaScript, com foco em layout e interatividade.
-        </p>
+            <h3>🌤️ Weather Glass App</h3>
+
+            <p>
+              Aplicação de previsão do tempo com API em tempo real,
+              interface moderna em Glassmorphism e experiência dinâmica.
+            </p>
+
             <div class="stack">
+              HTML • CSS • JavaScript • API REST
+            </div>
+
+            <div class="projeto-links">
+
+              <a
+                href="https://josemoraisrp.github.io/weather-glass-app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Weather Glass App"
+              >
+                Ver projeto
+              </a>
+
+              <a
+                href="https://github.com/josemoraisrp/weather-glass-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir código do Weather Glass App"
+              >
+                Código no GitHub
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- LOGIN -->
+
+          <div class="projeto-destaque">
+
+            <img
+              src="login.png"
+              alt="Sistema de login responsivo"
+            />
+
+            <h3>🔐 Sistema de Login</h3>
+
+            <p>
+              Projeto com validação de acesso, interface moderna,
+              responsiva e interação dinâmica com JavaScript.
+            </p>
+
+            <div class="stack">
+              HTML • CSS • JavaScript
+            </div>
+
+            <div class="projeto-links">
+
+              <a
+                href="https://josemoraisrp.github.io/Mini-Site-de-Login/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Sistema de Login"
+              >
+                Ver projeto
+              </a>
+
+              <a
+                href="https://github.com/josemoraisrp/Mini-Site-de-Login"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir código do Sistema de Login"
+              >
+                Código no GitHub
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- =================================
+           GRID DE PROJETOS
+      ================================== -->
+
+      <div class="projetos-grid">
+
+        <!-- CONVERSOR -->
+
+        <div class="projeto-card">
+
+          <img
+            src="conversor.png"
+            loading="lazy"
+            alt="Aplicação de conversão de moedas"
+          />
+
+          <h3>💱 Conversor de Moedas</h3>
+
+          <p>
+            Aplicação para conversão de moedas desenvolvida
+            para praticar lógica, manipulação do DOM e
+            interatividade com JavaScript.
+          </p>
+
+          <div class="stack">
             HTML • CSS • JavaScript
-            </div>
+          </div>
 
-        
+          <div class="projeto-links">
 
-        <div class="projeto-links">
-          <a href="https://josemoraisrp.github.io/Projeto-Mario-Bros/" target="_blank">
-            Ver projeto
-          </a>
-          <a href="https://github.com/josemoraisrp/Projeto-Mario-Bros" target="_blank">
-            Código no GitHub
-          </a>
+            <a
+              href="https://josemoraisrp.github.io/Conversor-de-moedas/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Conversor de Moedas"
+            >
+              Ver projeto
+            </a>
+
+            <a
+              href="https://github.com/josemoraisrp/Conversor-de-moedas"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir código do Conversor de Moedas"
+            >
+              Código no GitHub
+            </a>
+
+          </div>
+
         </div>
+
+        <!-- MARIO -->
+
+        <div class="projeto-card">
+
+          <img
+            src="mario.png"
+            loading="lazy"
+            alt="Landing page Mario Bros"
+          />
+
+          <h3>🍄 Landing Page Mario</h3>
+
+          <p>
+            Projeto desenvolvido durante o curso DevClub
+            para aplicar fundamentos de HTML, CSS e JavaScript,
+            com foco em layout e interatividade.
+          </p>
+
+          <div class="stack">
+            HTML • CSS • JavaScript
+          </div>
+
+          <div class="projeto-links">
+
+            <a
+              href="https://josemoraisrp.github.io/Projeto-Mario-Bros/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Landing Page Mario"
+            >
+              Ver projeto
+            </a>
+
+            <a
+              href="https://github.com/josemoraisrp/Projeto-Mario-Bros"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir código da Landing Page Mario"
+            >
+              Código no GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- COMBUSTÍVEL -->
+
+        <div class="projeto-card">
+
+          <img
+            src="alcool.png"
+            loading="lazy"
+            alt="Aplicação comparador de combustível"
+          />
+
+          <h3>⛽ Comparador de Combustível</h3>
+
+          <p>
+            Aplicação que calcula se é mais vantajoso
+            abastecer com álcool ou gasolina utilizando
+            lógica condicional em JavaScript.
+          </p>
+
+          <div class="stack">
+            HTML • CSS • JavaScript
+          </div>
+
+          <div class="projeto-links">
+
+            <a
+              href="https://josemoraisrp.github.io/compensa-lcool-gasolina/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Comparador de Combustível"
+            >
+              Ver projeto
+            </a>
+
+            <a
+              href="https://github.com/josemoraisrp/Alcool-ou-gasolina"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir código do Comparador de Combustível"
+            >
+              Código no GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- CONTROLE DE GASTOS -->
+
+        <div class="projeto-card">
+
+          <img
+            src="controle.png"
+            loading="lazy"
+            alt="Aplicação controle de gastos"
+          />
+
+          <h3>💰 Controle de Gastos</h3>
+
+          <p>
+            Aplicação para gerenciamento de despesas
+            utilizando JavaScript e manipulação do DOM.
+          </p>
+
+          <div class="stack">
+            HTML • CSS • JavaScript
+          </div>
+
+          <div class="projeto-links">
+
+            <a
+              href="https://josemoraisrp.github.io/Controle-de-Gastos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Controle de Gastos"
+            >
+              Ver projeto
+            </a>
+
+            <a
+              href="https://github.com/josemoraisrp/Controle-de-Gastos"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir código do Controle de Gastos"
+            >
+              Código no GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- LANDING PAGE -->
+
+        <div class="projeto-card">
+
+          <img
+            src="impressora.png"
+            loading="lazy"
+            alt="Landing page comercial de impressora"
+          />
+
+          <h3>🖨️ Landing Page Comercial</h3>
+
+          <p>
+            Landing page comercial desenvolvida com foco
+            em apresentação visual, destaque de preços
+            e conversão de clientes.
+          </p>
+
+          <div class="stack">
+            HTML • CSS • JavaScript
+          </div>
+
+          <div class="projeto-links">
+
+            <a
+              href="https://josemoraisrp.github.io/Propaganda-impressora/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Landing Page Comercial"
+            >
+              Ver projeto
+            </a>
+
+            <a
+              href="https://github.com/josemoraisrp/Propaganda-impressora"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir código da Landing Page Comercial"
+            >
+              Código no GitHub
+            </a>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="projeto-card">
-    <img src="alcool.png" alt="Comparador de Combustível">
+    </section>
 
-    <h3>Comparador de Combustível</h3>
+  </main>
 
-    <p>
-        Aplicação que calcula se é mais vantajoso abastecer com álcool ou gasolina, utilizando lógica condicional e interação com o usuário em JavaScript.
-    </p>
-        <div class="stack">
-         HTML • CSS • JavaScript
-        </div>
+  <!-- =================================
+       FOOTER
+  ================================== -->
 
-    <div class="projeto-links">
-        <a href="https://josemoraisrp.github.io/compensa-lcool-gasolina/" target="_blank">
-            Ver projeto
-        </a>
-
-        <a href="https://github.com/josemoraisrp/Alcool-ou-gasolina" target="_blank">
-            Código no GitHub
-        </a>
-    </div>
-</div>
-<div class="projeto-card">
-    <img src="controle.png" alt="Controle de Gastos">
-
-    <h3>Controle de Gastos</h3>
+  <footer class="footer">
 
     <p>
-        Aplicação para gerenciamento de despesas, permitindo adicionar, visualizar e controlar gastos, utilizando JavaScript e manipulação do DOM.
-    </p>
-
-       <div class="stack">
-       HTML • CSS • JavaScript
-       </div>
-
-    <div class="projeto-links">
-        <a href="https://josemoraisrp.github.io/Controle-de-Gastos/" target="_blank">
-            Ver projeto
-        </a>
-
-        <a href="https://github.com/josemoraisrp/Controle-de-Gastos" target="_blank">
-            Código no GitHub
-        </a>
-    </div>
-</div>
-
-<div class="projeto-card">
-    <img src="mvs.png" alt="Controle de Gastos">
-
-    <h3>Projeto MVS</h3>
-
-    <p>
-        Website profissional desenvolvido para empresa de segurança eletrônica,
-            apresentando serviços de instalação, monitoramento e soluções tecnológicas.
-            Projeto focado em design moderno, responsividade e experiência do usuário.
-    </p>
-
-      <div class="stack">
-      HTML • CSS • JavaScript
-      </div>
-
-    <div class="projeto-links">
-        <a href="https://josemoraisrp.github.io/mvs.seg//" target="_blank">
-            Ver projeto
-        </a>
-
-        <a href=https://github.com/josemoraisrp/mvs.seg target="_blank">
-            Código no GitHub
-        </a>
-    </div>
-</div>
-
-<div class="projeto-card">
-    <img src="impressora.png" alt="Controle de Gastos">
-
-    <h3>🖨️ Landing Page Comercial</h3>
-
-    <p>
-         Landing page comercial desenvolvida com foco em apresentação visual,
-        destaque de preços e conversão de clientes.
-    </p>
-        <div class="stack">
-        HTML • CSS • JavaScript
-        </div>
-
-    <div class="projeto-links">
-        <a href="https://josemoraisrp.github.io/Propaganda-impressora/" target="_blank">
-            Ver projeto
-        </a>
-
-        <a href=https://github.com/josemoraisrp/Propaganda-impressora target="_blank">
-            Código no GitHub
-        </a>
-    </div>
-
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-
-    <p>
-        © 2026 José Moraes • Desenvolvedor Front-End
+      © 2026 José Morais • Desenvolvedor Front-End
     </p>
 
     <div class="footer-links">
 
-        <a href="https://github.com/josemoraisrp" target="_blank">
-            <i class="fa-brands fa-github"></i>
-        </a>
+      <a
+        href="https://github.com/josemoraisrp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Abrir GitHub"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
 
-        <a href="https://www.linkedin.com/in/jose-moraes-dev" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
+      <a
+        href="https://www.linkedin.com/in/jose-moraes-dev"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Abrir LinkedIn"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
 
-        <a href="https://wa.me/5516993271845" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
+      <a
+        href="https://wa.me/5516993271845"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Abrir WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
 
     </div>
 
-</footer>
- <script src="script.js"></script>
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
+
 </html>
